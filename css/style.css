@@ -1,0 +1,21 @@
+body, html, main {
+  /* important */
+  height: 100%;
+}
+
+.scrolling-bg {
+  min-height: 20%;
+}
+
+.fixed-bg {
+  min-height: 30%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('../img/lowPoly1.png');
+}
+
+.landing {
+  min-height: 100%;
+}

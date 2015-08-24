@@ -1,117 +1,422 @@
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Femi's Blog</title>
-    <meta name="description" content="Thoughts, stories and ideas.">
-
-    <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="shortcut icon" href="favicon.ico">
-
-    <link rel="stylesheet" type="text/css" href="assets/css/screen.css?v=1070a4e933">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
-
-    <link rel="canonical" href="http://femi-saliu.github.io/">
-    
-    <meta property="og:site_name" content="Femi's Blog">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Femi's Blog">
-    <meta property="og:description" content="Thoughts, stories and ideas.">
-    <meta property="og:url" content="http://femi-saliu.github.io/">
-    
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Femi's Blog">
-    <meta name="twitter:description" content="Thoughts, stories and ideas.">
-    <meta name="twitter:url" content="http://femi-saliu.github.io/">
-    
-    <script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "Website",
-    "publisher": "Femi's Blog",
-    "url": "http://femi-saliu.github.io/",
-    "description": "Thoughts, stories and ideas."
-}
-    </script>
-
-    <meta name="generator" content="Ghost 0.6">
-    <link rel="alternate" type="application/rss+xml" title="Femi's Blog" href="http://femi-saliu.github.io/rss/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+  <script src="./js/main.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Femi</title>
 </head>
-<body class="home-template nav-closed">
-
-    <div class="nav">
-    <h3 class="nav-title">Menu</h3>
-    <a href="index.html#" class="nav-close">
-        <span class="hidden">Close</span>
-    </a>
-    <ul>
-            <li class="nav-home nav-current" role="presentation"><a href="http://femi-saliu.github.io/">Home</a></li>
-    </ul>
-    <a class="subscribe-button icon-feed" href="http://femi-saliu.github.io/rss/">Subscribe</a>
-</div>
-<span class="nav-cover"></span>
-
-
-    <div class="site-wrapper">
-
-        
-<header class="main-header no-cover">
-    <nav class="main-nav overlay clearfix">
-        
-            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+<body>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper red darken-2">
+        <!-- <a href="#!" class="brand-logo">Logo</a> -->
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">Femi's Blog</h1>
-            <h2 class="page-description">Thoughts, stories and ideas.</h2>
+  </div>
+  
+  <div class="fixed-bg landing valign-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col s4 offset-s4">
+          <img class="responsive-img circle" src="img/femiSaliu.jpg">
         </div>
-    </div>
-    <a class="scroll-down icon-arrow-left" href="index.html#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
-</header>
-
-<main id="content" class="content" role="main">
-
-    <div class="extra-pagination inner">
-    <nav class="pagination" role="navigation">
-    <span class="page-number">Page 1 of 1</span>
-</nav>
-</div>
-
-<article class="post tag-getting-started">
-    <header class="post-header">
-        <h2 class="post-title"><a href="welcome-to-ghost/">Welcome to Ghost</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p>You're live! Nice. We've put together a little post to introduce you to the Ghost editor and get you started. You can manage your content by <a class="read-more" href="welcome-to-ghost/">»</a></p>
-    </section>
-    <footer class="post-meta">
+        <div class="col s12">
+          <h2 class="center-align white-text">Femi Saliu</h2>
+          <h3 class="center-align white-text">Software Engineer</h3>
+        </div>
+        <div class="col s6 offset-s3 center">
+          <div class="row">
+            <div class="col s3">
+              <a href="https://github.com/femi-saliu"><i class=" white-text fa fa-github fa-3x"></i></a>
+            </div>
+            <div class="col s3">
+              <a href="https://www.linkedin.com/in/femisaliu"><i class="white-text fa fa-linkedin fa-3x"></i></a>
+            </div>
+            <div class="col s3">
+              <a href="mailto:femisaliu@gmail.com"><i class="white-text fa fa-envelope-o fa-3x"></i></a>
+            </div>
+            <div class="col s3">
+              <a href="https://twitter.com/Femi_Saliu"><i class="white-text fa fa-twitter fa-3x"></i></a>
+            </div>
+          </div>
+        </div>
         
-        <a href="author/femi/">Femi Saliu</a>
-         on <a href="tag/getting-started/">Getting Started</a>
-        <time class="post-date" datetime="2015-07-25">25 July 2015</time>
-    </footer>
-</article>
+      </div>
+    </div>
+  </div>
+  
 
-<nav class="pagination" role="navigation">
-    <span class="page-number">Page 1 of 1</span>
-</nav>
+  <div class="scrolling-bg">
+    <div class="container valign-wrapper">
+      <blockquote>
+        <h3>Programming is the process of solving a problem once, so you can get a computer to solve it forever.</h3>
+      </blockquote>
+    </div>
+  </div>
 
-</main>
+  <div id="profile" class="fixed-bg valign-wrapper">
+    <div class="row">
+      <div class="col s12">
+        <h1 class="white-text center-align">Profile</h1>
+      </div>
+    </div>
+  </div>
+  <div class="scrolling-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+    <p class="flow-text">Hey there! My name is Femi Saliu. I recently graduated from Pomona College in Claremont, California where I received my Bachelor of Arts degree in Computer Science. I started programming small video games for myself a few years before I first left for college, but since then, I've gained a lot of experience working on web development related projects. When im not busy writing code, I usually find myself exploring my city with friends, working out or relaxing with some video games. I also like to draw and i've recently taken up photography too.</p> 
+    <p class="flow-text">My career as a software developer is just starting and so I've been spending a lot of time learning about emerging technologies related to web development and trying them out. My goal is to secure a web development position where I will be able to deepen my knowledge about the field that I am so passionate about. Feel free to contact me with any questions or comments, I'm excited to hear from you!</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div id="education" class="fixed-bg valign-wrapper">
+    <div class="row">
+      <div class="col s12">
+        <h1 class="white-text center-align">Education</h1>
+      </div>
+    </div>
+  </div>
+  <div class="scrolling-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+
+          <div class="card-panel red darken-2 white-text">
+            <h4>Pomona College 2011 - 2015</h4>
+            <h5>Bachelor of Arts, Computer Science</h5>
+            <p>Relevant Courses:</p>
+            <p>Data Structures, Discrete Mathematics, Linear Algebra, Advanced Programming, 2D Graphic Design, Computer Systems, Computability & Logic, Programming Language Design, Artificial Intelligence</p>
+          </div>
+
+          <div class="card-panel red darken-2 white-text">
+            <h4>Aquincum Institute of Technology 01/2014 - 05/2014</h4>
+            <h5>Study Abroad Program in Budapest, Hungary</h5>
+            <p>Relevant Courses:</p>
+            <p>Algorithms, Advanced Graphic Design, Mobile Software Development, Computer Graphics</p>
+          </div>
+
+          <div class="card-panel red darken-2 white-text">
+            <h4>Maker Square 05/2015 - 09/2015</h4>
+            <h5>Web Development Coding Bootcamp</h5>
+            <p>Relevant Topics Covered:</p>
+            <p>Algorithm Design, Javascript Framework Integration, Git & Version Control, Server Side Programming, Databases, Authentication, Deployment</p>
+          </div>
+
+        </div>
+      </div>
+    </div> 
+  </div>
+
+  <div id="skills" class="fixed-bg valign-wrapper">
+    <div class="row">
+      <div class="col s12">
+        <h1 class="white-text center-align">Skills</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="scrolling-bg">
+    <div class="container">
+      <div class="row">
+      <h3>Essential Tools</h3>
+        <ul>
+
+          <li>
+            <div class="row valign-wrapper">
+              <div class="col s4 m2">
+                <h5 class="flow-text">Html 5</h5>
+              </div>
+              <div class="col s8 m10 red darken-2 white-text z-depth-2">
+                <h6 class="flow-text">Advanced</h6>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div class="row valign-wrapper">
+              <div class="col s4 m2">
+                <h5 class="flow-text">CSS 3</h5>
+              </div>
+              <div class="col s7 m8 red darken-2 white-text z-depth-2">
+                <h6 class="flow-text">Advanced</h6>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="row valign-wrapper">
+              <div class="col s4 m2">
+                <h5 class="flow-text">JavaScript</h5>
+              </div>
+              <div class="col s8 m10 red darken-2 white-text z-depth-2">
+                <h6 class="flow-text">Advanced</h6>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="row valign-wrapper">
+              <div class="col s4 m2">
+                <h5 class="flow-text">Node.js</h5>
+              </div>
+              <div class="col s6 m7 red darken-2 white-text z-depth-2">
+                <h6 class="flow-text">Experienced</h6>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="row valign-wrapper">
+              <div class="col s4 m2">
+                <h5 class="flow-text">SQL</h5>
+              </div>
+              <div class="col s5 m7 red darken-2 white-text z-depth-2">
+                <h6 class="flow-text">Intermediate</h6>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="row valign-wrapper">
+              <div class="col s4 m2">
+                <h5 class="flow-text">MongoDB</h5>
+              </div>
+              <div class="col s5 m7 red darken-2 white-text z-depth-2">
+                <h6 class="flow-text">Intermediate</h6>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="row valign-wrapper">
+              <div class="col s4 m2">
+                <h5 class="flow-text">Firebase</h5>
+              </div>
+              <div class="col s6 m8 red darken-2 white-text z-depth-2">
+                <h6 class="flow-text">Experienced</h6>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="row valign-wrapper">
+              <div class="col s4 m2">
+                <h5 class="flow-text">Git</h5>
+              </div>
+              <div class="col s5 m7 red darken-2 white-text z-depth-2">
+                <h6 class="flow-text">Experienced</h6>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="row valign-wrapper">
+              <div class="col s4 m2">
+                <h5 class="flow-text">Adobe PhotoShop</h5>
+              </div>
+              <div class="col s4 m6 red darken-2 white-text z-depth-2">
+                <h6 class="flow-text">Intermediate</h6>
+              </div>
+            </div>
+          </li>
+          
+        </ul>
+        
+        <h3>Frameworks</h3>
+        <ul>
+          
+          <li>
+            <div class="row valign-wrapper">
+              <div class="col s4 m2">
+                <h5 class="flow-text">Angular.js</h5>
+              </div>
+              <div class="col s6 m8 red darken-2 white-text z-depth-2">
+                <h6 class="flow-text">Experienced</h6>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="row valign-wrapper">
+              <div class="col s4 m2">
+                <h5 class="flow-text">Backbone.js</h5>
+              </div>
+              <div class="col s5 m7 red darken-2 white-text z-depth-2">
+                <h6 class="flow-text">Experienced</h6>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="row valign-wrapper">
+              <div class="col s4 m2">
+                <h5 class="flow-text">Express.js</h5>
+              </div>
+              <div class="col s6 m8 red darken-2 white-text z-depth-2">
+                <h6 class="flow-text">Experienced</h6>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="row valign-wrapper">
+              <div class="col s4 m2">
+                <h5 class="flow-text">D3.js</h5>
+              </div>
+              <div class="col s4 m6 red darken-2 white-text z-depth-2">
+                <h6 class="flow-text">Intermediate</h6>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div id="projects" class="fixed-bg valign-wrapper section scrollspy">
+    <div class="row">
+      <div class="col s12">
+        <h1 class="white-text center-align">Projects</h1>
+      </div>
+    </div>
+  </div>
+  <div class="scrolling-bg">
+    <div class="container">
 
 
-        <footer class="site-footer clearfix">
-            <section class="copyright"><a href="http://femi-saliu.github.io">Femi's Blog</a> © 2015</section>
-            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
-        </footer>
+
+      <div class="row">
+        <div class="col s12 red darken-2 z-depth-3 white-text">
+          <h3 class="">
+            Home Harmony
+            <a class="" href="https://github.com/femi-saliu/pleasant-puente"><i class=" white-text fa fa-github"></i></a>
+          </h3>
+          <p class="flow-text">I contributed to the creation of this application, which is a desktop/mobile app to solve the problem of communication and delegating tasks between roommates. Our app allows users to create a virtual house and add other users as roommates. Then users can manage house expenses, delegate tasks to their roommates and post anonymous concerns/compliments that their roommates can also view. This application was created using Angular.js, Firebase, and Material Design Lite.</p>
+          <div class="row">
+            <div class="col s3">
+              <img class="responsive-img materialboxed" src="img/hhScreen1.png">
+            </div>
+            <div class="col s3">
+              <img class="responsive-img materialboxed" src="img/hhScreen2.png">
+            </div>
+            <div class="col s3">
+              <img class="responsive-img materialboxed" src="img/hhScreen3.png">
+            </div>
+            <div class="col s3">
+              <img class="responsive-img materialboxed" src="img/hhScreen4.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 red darken-2 z-depth-3 white-text">
+          <h3 class="">
+            Park Assist
+            <a class="" href="https://github.com/femi-saliu/splendid-simi"><i class=" white-text fa fa-github"></i></a>
+          </h3>
+          <p class="flow-text">My team inherited an application whose purpose was to recommend nearby available parking spaces for drivers in Santa Monica. The application scrapes data from Santa Monica's parking meter API and uses that data to route the user to the nearest available parking meter using Google Map's API. After my group recieved the project, we added additional features. My job specifically was to extend the application to recommend parking lots in addition to metered parking spaces. Also, I implemented a feature that lets users "reserve" a space, which hides a particular space from other people using the app for 10 min. This app was created using Santa Monica's Parking API, Google Map's API, Angularjs, and Firebase. </p>
+          <div class="row">
+            <div class="col s4">
+              <img class="responsive-img materialboxed" src="img/paScreen1.png">
+            </div>
+            <div class="col s4">
+              <img class="responsive-img materialboxed" src="img/paScreen2.png">
+            </div>
+            <div class="col s4">
+              <img class="responsive-img materialboxed" src="img/paScreen3.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 red darken-2 z-depth-3 white-text">
+          <h3 class="">
+            Goblin Rush
+          </h3>
+          <p class="flow-text">I made Goblin rush as fun side project while I was studying programming in Budapest, Hungary. I ended up releasing the application to the iOS app store and for the year that it was on the store, over 700 people from all around the world downloaded it. I used a library called UnityScript, which is based on Javascript to program all of the ingame logic, Adobe photoshop to create all of the images and assets, and Unity3D to pull everything together.</p>
+          <div class="row">
+            <div class="col s3">
+              <img class="responsive-img materialboxed" src="img/grScreen1.png">
+            </div>
+            <div class="col s3">
+              <img class="responsive-img materialboxed" src="img/grScreen2.png">
+            </div>
+            <div class="col s3">
+              <img class="responsive-img materialboxed" src="img/grScreen3.png">
+            </div>
+            <div class="col s3">
+              <img class="responsive-img materialboxed" src="img/grScreen4.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     </div>
+  </div>
 
-    <script src="public/jquery.js?v=1070a4e933"></script>
+  <div id="contact" class="fixed-bg valign-wrapper">
+    <div class="row">
+      <div class="col s12">
+        <h1 class="white-text center-align">Contact</h1>
+      </div>
+    </div>
+  </div>
+  <div class="scrolling-bg">
+    <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <p class="flow-text">
+          Feel free to contact me via email at <a href="mailto:femisaliu@gmail.com">femisaliu@gmail.com</a> or at 310-619-7076.
+        </p>
+        <p class="flow-text">You can also find me on <a href="https://github.com/femi-saliu">Github</a> and <a href="https://www.linkedin.com/in/femisaliu">LinkedIn</a>.</p>
+        <p class="flow-text">I look forward to hearing from you, lets work together!</p>
 
-    <script type="text/javascript" src="assets/js/jquery.fitvids.js?v=1070a4e933"></script>
-    <script type="text/javascript" src="assets/js/index.js?v=1070a4e933"></script>
-
+      </div>
+    </div>
+    </div>
+  </div>
+  <footer class="page-footer red darken-2">
+            <div class="container">
+              <div class="row">
+                <div class="col s12 white-text center">
+                  <a class="white-text" href="#profile">Profile</a> | <a class="white-text" href="#education">Education</a> | <a class="white-text" href="#skills">Skills</a> | <a class="white-text" href="#projects">Projects</a> | <a class="white-text" href="#contact">Contact</a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+              © 2015 Femi Saliu
+              </div>
+            </div>
+          </footer>
 </body>
+</html>
